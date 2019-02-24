@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twoja Pogoda :)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+    <main class="app-container">
+        <h1 class="location">Lokacja</h1>
+        <div class="weather-info">
+            <div class="current-weather">
+                <canvas class="icon" width="128" height="128"></canvas>
+                <h2 class="current-temperature"></h2>
+                <p class="current-summary"></p>
+            </div>
+            <div class="later-weather">
+                <div class="next-hour-weather">
+                    <b>Za godzinę będzie</b>
+                    <canvas class="hour-icon" width="48" height="48"></canvas>
+                    <h3 class="hour-temperature"></h3>
+                    <p class="hour-summary"></p>
+                </div>
+                <div class="tomorrow-weather">
+                    <b>Jutro będzie</b>
+                    <canvas class="tomorrow-icon" width="48" height="48"></canvas>
+                    <h3 class="tomorrow-temperature"></h3>
+                    <p class="tomorrow-summary"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Stworzone przez <a href="https://abugjewski.github.io/portfolio/">Adrian Bugajewski</a> na podstawie <a href="https://www.youtube.com/watch?v=wPElVpR1rwA&t=946s">poradnika Youtube</a></footer>
+    <script src="app.js"></script>
+    <script src="skycons.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    align-items: center;
+    box-sizing: border-box;
+    color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Libre Baskerville', serif;
+    height: 100vh;
+    justify-content: center;
+}
+
+footer {
+    color: #3d3d3d;
+    font-size: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.coldest-bg {
+    background: #7f7fd5;
+    background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.cold-bg {
+    background: #a8ff78;
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78); 
+    background: linear-gradient(to right, #78ffd6, #a8ff78);
+}
+
+.finetemp-bg {
+    background: #FDFC47; 
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+    background: linear-gradient(to right, #24FE41, #FDFC47);
+}
+
+.hot-bg {
+    background: #FDC830;
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+    background: linear-gradient(to right, #F37335, #FDC830);
+}
+
+.app-container, .next-hour-weather, .tomorrow-weather, .weather-info, .current-weather {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    margin-bottom: 2rem;
+}
+
+.current-weather {
+    margin-bottom: 2rem;
+}
+
+.icon, .next-hour-weather {
+    margin-bottom: 2rem;
+}
+
+.later-weather {
+    color: #6d6d6d;
+    font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    .weather-info {
+        flex-direction: row;
+    }
+
+    .current-weather {
+        margin-right: 3rem;
+    }
+}
